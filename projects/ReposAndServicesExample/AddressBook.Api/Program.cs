@@ -1,5 +1,3 @@
-using AddressBook;
-using AddressBook.Repositories;
 using Contacts.Services;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -8,8 +8,9 @@ public interface IContactsRepository
 
     public void DeleteContactById(int id);
 
-    public void UpdateContact(Contact contact);
+    public void UpdateContact(ContactDTO contact);
 
-    public List<Contact> GetAll();
-    List<Contact> FindContacts(string criteria);
+    public List<ContactDTO> GetAll();
+    
+    List<ContactDTO> FindContacts(string criteria);
 }

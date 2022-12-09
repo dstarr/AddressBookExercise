@@ -1,10 +1,10 @@
-using AddressBook.Entities;
+using Contacts.Data.Repositories.DTOs;
 
 namespace Contacts.Data.Repositories;
 
 public class ContactsRepository : IContactsRepository
 {
-    public Contact GetContactById(int id)
+    public ContactDTO GetContactById(int id)
     {
         throw new NotImplementedException();
     }
@@ -14,18 +14,18 @@ public class ContactsRepository : IContactsRepository
         throw new NotImplementedException();
     }
 
-    public void UpdateContact(Contact contact)
+    public void UpdateContact(ContactDTO contact)
     {
         throw new NotImplementedException();
     }
 
-    public List<Contact> FindContacts(string criteria)
+    public List<ContactDTO> FindContacts(string criteria)
     {
         throw new NotImplementedException();
     }
 
 
-    public List<Contact> GetAll()
+    public List<ContactDTO> GetAll()
     {
         throw new NotImplementedException();
     }
