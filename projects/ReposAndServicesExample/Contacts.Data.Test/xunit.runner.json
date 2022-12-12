@@ -1,7 +1,0 @@
-{
-  "$schema": "https://xunit.net/schema/current/xunit.runner.schema.json",
-  "endpointUri": "https://ab-db.documents.azure.com:443",
-  "databaseId": "AddressBook",
-  "primaryKey": "2m40Dluilb2HkWgBsyR38vS3vLF8ww8rI0fOuXFekCdpOT17xNou4dGKIZHoEjTQrRcrG451Q3ILACDb2KRi1g==",
-  "containerId": "Contacts"
-}
