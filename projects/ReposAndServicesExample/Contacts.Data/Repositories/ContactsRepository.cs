@@ -4,6 +4,11 @@ namespace Contacts.Data.Repositories;
 
 public class ContactsRepository : IContactsRepository
 {
+    public ContactsRepository()
+    {
+           
+    }
+
     public ContactDTO GetContactById(int id)
     {
         throw new NotImplementedException();
@@ -14,7 +19,12 @@ public class ContactsRepository : IContactsRepository
         throw new NotImplementedException();
     }
 
-    public void UpdateContact(ContactDTO contact)
+    public void UpdateExistingContact(ContactDTO contact)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void AddNewContact(ContactDTO contact)
     {
         throw new NotImplementedException();
     }
@@ -24,8 +34,7 @@ public class ContactsRepository : IContactsRepository
         throw new NotImplementedException();
     }
 
-
-    public List<ContactDTO> GetAll()
+    public List<ContactDTO> GetAllContacts()
     {
         throw new NotImplementedException();
     }
