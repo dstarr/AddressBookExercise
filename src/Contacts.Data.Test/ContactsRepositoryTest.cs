@@ -8,11 +8,9 @@ namespace Contacts.Data.Test
 {
     public class ContactsRepositoryTest : BaseTest
     {
-        public ContactsRepositoryTest()
+        public ContactsRepositoryTest() : base()
         {
              
-
-            
             // Console.WriteLine("Created Database: {0}\n", this.database.Id);
         }
 

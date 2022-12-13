@@ -9,6 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="xunit.runner.json.rename" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <Content Include="xunit.runner.json.rename">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Include="xunit.runner.json" CopyToOutputDirectory="Always" />
 	  <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.31.2" />
 	  <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />

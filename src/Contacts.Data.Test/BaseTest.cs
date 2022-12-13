@@ -13,6 +13,10 @@ namespace Contacts.Data.Test
             
             Configuration = builder.Build();
 
+
+            Console.Write("databaseId: ");
+            Console.WriteLine(this.Configuration["databaseId"]);
+
             // CosmosClient CosmosClient = new CosmosClient(
             //     this.Configuration[""], 
             //     PrimaryKey, 
