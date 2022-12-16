@@ -1,20 +1,28 @@
-﻿using Contacts.Data.Repositories;
+﻿using Contacts.Data;
+using Contacts.Data.Repositories;
 using Contacts.Services.Entities;
 
 namespace Contacts.Services;
 
 public class ContactsService : IContactsService
 {
-    private IContactsRepository _contactsRepository;
+    private readonly IContactsRepository _repository;
 
     public ContactsService()
     {
-        _contactsRepository = new ContactsRepository();
-    }
+        DbConfiguration dbConfiguration = new DbConfiguration()
+        {
+            ContainerName = "",
+            DatabaseName = "",
+            EndpointUri = "",
+            PrimaryKey = ""
+        };
 
-    public ContactsService(IContactsRepository contactsRepository)
+        _repository = new ContactsRepository(dbConfiguration);
+    }
+    public ContactsService(IContactsRepository repository)
     {
-        this._contactsRepository = contactsRepository;
+        _repository = repository;
     }
 
     public Contact FindContact(int id)

@@ -1,15 +1,17 @@
-using Contacts.Data.Repositories.DTOs;
+using Contacts.Data.DTOs;
 
 namespace Contacts.Data.Repositories;
 
 public class ContactsRepository : IContactsRepository
 {
-    public ContactsRepository()
+    private readonly DbConfiguration _dbConfiguration;
+
+    public ContactsRepository(DbConfiguration dbConfiguration)
     {
-           
+        _dbConfiguration = dbConfiguration;
     }
 
-    public ContactDTO GetContactById(int id)
+    public ContactDto GetContactById(int id)
     {
         throw new NotImplementedException();
     }
@@ -19,22 +21,22 @@ public class ContactsRepository : IContactsRepository
         throw new NotImplementedException();
     }
 
-    public void UpdateExistingContact(ContactDTO contact)
+    public void UpdateExistingContact(ContactDto contact)
     {
         throw new NotImplementedException();
     }
 
-    public void AddNewContact(ContactDTO contact)
+    public void AddNewContact(ContactDto contact)
     {
         throw new NotImplementedException();
     }
 
-    public List<ContactDTO> FindContacts(string criteria)
+    public List<ContactDto> FindContacts(string criteria)
     {
         throw new NotImplementedException();
     }
 
-    public List<ContactDTO> GetAllContacts()
+    public List<ContactDto> GetAllContacts()
     {
         throw new NotImplementedException();
     }

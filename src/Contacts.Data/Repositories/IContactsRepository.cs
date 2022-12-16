@@ -1,18 +1,18 @@
-using Contacts.Data.Repositories.DTOs;
+using Contacts.Data.DTOs;
 
 namespace Contacts.Data.Repositories;
 
 public interface IContactsRepository
 {
-    public ContactDTO GetContactById(int id);
+    public ContactDto GetContactById(int id);
 
     public void DeleteContactById(int id);
 
-    public void UpdateExistingContact(ContactDTO contact);
+    public void UpdateExistingContact(ContactDto contact);
     
-    public void AddNewContact(ContactDTO contact);
+    public void AddNewContact(ContactDto contact);
 
-    public List<ContactDTO> GetAllContacts();
+    public List<ContactDto> GetAllContacts();
     
-    List<ContactDTO> FindContacts(string criteria);
+    List<ContactDto> FindContacts(string criteria);
 }
